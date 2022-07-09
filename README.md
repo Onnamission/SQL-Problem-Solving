@@ -8,7 +8,7 @@
 ![Github Repo Star Req](https://img.shields.io/badge/%F0%9F%8C%9F-If%20Useful-BC4E99)
 <br>
 ![Hackerrank](https://img.shields.io/badge/Hackerrank-05192D?style=for-the-badge&logo=hackerrank&logoColor=03E860)
-![MySQL](https://img.shields.io/badge/mysql-black.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-00758F.svg?style=for-the-badge&logo=mysql&logoColor=white)
 
 ![Wallpaper](Images/wallpaper.png)
 
