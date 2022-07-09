@@ -414,7 +414,3 @@ Q. You are given three tables: Students, Friends and Packages. Students contains
 Write a query to output the names of those students whose best friends got offered a higher salary than them. Names must be ordered by the salary amount offered to the best friends. It is guaranteed that no two students got same salary offer.
 
 ![Case 12_1](Images/Medium/case12_1.png)
-
-![Case 12_2](Images/Medium/case12_2.png)
-
-![Case 12_3](Images/Medium/case12_3.png)
