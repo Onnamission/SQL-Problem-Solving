@@ -22,7 +22,7 @@ MYSQL option has been used to solve the given cases.
   git clone https://github.com/Onnamission/SQL-Problem-Solving.git
 ```
 
-## Basic Level SQL Questions
+## 🧑‍💻 Basic Level SQL Questions
 
 ### Case 1 - Revising the Select Query I
 
@@ -298,7 +298,7 @@ Q. P(R) represents a pattern drawn by Julia in R rows. The following pattern rep
 
 Write a query to print the pattern P(20).
 
-## Intermediate Level SQL Questions
+## 🧑‍💻 Intermediate Level SQL Questions
 
 ### Case 1 - The PADS
 
