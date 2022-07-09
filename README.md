@@ -112,19 +112,19 @@ Q. Query the list of CITY names from STATION that do not start with vowels and d
 
 Q. Query the Name of any student in STUDENTS who scored higher than 75 Marks. Order your output by the last three characters of each name. If two or more students both have names ending in the same last three characters (i.e.: Bobby, Robby, etc.), secondary sort them by ascending ID.
 
-![Case 18](Images/Easy/case18.jpg)
+![Case 18](Images/Easy/case18.png)
 
 ### Case 19 - Employee Names
 
 Q. Write a query that prints a list of employee names (i.e.: the name attribute) from the Employee table in alphabetical order.
 
-![Case 19](Images/Easy/case19.jpg)
+![Case 19](Images/Easy/case19.png)
 
 ### Case 20 - Employee Salaries
 
 Q. Write a query that prints a list of employee names (i.e.: the name attribute) for employees in Employee having a salary greater than $2000 per month who have been employees for less than 10 months. Sort your result by ascending employee_id.
 
-![Case 20](Images/Easy/case20.jpg)
+![Case 20](Images/Easy/case20.png)
 
 ### Case 21 - Type of Triangle
 
@@ -135,7 +135,7 @@ Q. Write a query identifying the type of each record in the TRIANGLES table usin
  - Scalene: It's a triangle with 3 sides of differing lengths.
  - Not A Triangle: The given values of A, B, and C don't form a triangle.
 
-![Case 21](Images/Easy/case21.jpg)
+![Case 21](Images/Easy/case21.png)
 
 ### Case 22 - Revising Aggregations The Count Function
 
@@ -179,13 +179,13 @@ Samantha was tasked with calculating the average monthly salaries for all employ
 
 Write a query calculating the amount of error (i.e.:  average monthly salaries), and round it up to the next integer.
 
-![Case 28](Images/Easy/case28.jpg)
+![Case 28](Images/Easy/case28.png)
 
 ### Case 29 - Top Earners
 
 Q. We define an employee's total earnings to be their monthly salary x months worked, and the maximum total earnings to be the maximum total earnings for any employee in the Employee table. Write a query to find the maximum total earnings for all employees as well as the total number of employees who have maximum total earnings. Then print these values as 2 space-separated integers.
 
-![Case 29](Images/Easy/case29.jpg)
+![Case 29](Images/Easy/case29.png)
 
 ### Case 30 - Weather Observation Station 2
 
@@ -260,11 +260,11 @@ Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
 
 Q. P(R) represents a pattern drawn by Julia in R rows. The following pattern represents P(5):
 
-* * * * * 
-* * * * 
-* * * 
-* * 
-*
+<p>* * * * *</p>
+<p>* * * *</p> 
+<p>* * *</p> 
+<p>* *</p> 
+<p>*</p>
 
 Write a query to print the pattern P(20).
 
@@ -272,11 +272,11 @@ Write a query to print the pattern P(20).
 
 Q. P(R) represents a pattern drawn by Julia in R rows. The following pattern represents P(5):
 
-* 
-* * 
-* * * 
-* * * * 
-* * * * *
+<p>*</p>
+<p>* *</p>
+<p>* * *</p>
+<p>* * * *</p>
+<p>* * * * *</p>
 
 Write a query to print the pattern P(20).
 
@@ -291,7 +291,7 @@ Q2. Query the number of ocurrences of each occupation in OCCUPATIONS. Sort the o
 
 Note: There will be at least two entries in the table for each type of occupation.
 
-![Case 1](Images/Medium/case1.jpg)
+![Case 1](Images/Medium/case1.png)
 
 ### Case 2 - Binary Tree Nodes
 
@@ -303,7 +303,7 @@ Write a query to find the node type of Binary Tree ordered by the value of the n
  - Leaf: If node is leaf node.
  - Inner: If node is neither root nor leaf node.
 
-![Case 2](Images/Medium/case2.jpg)
+![Case 2](Images/Medium/case2.png)
 
 ### Case 3 - New Companies
 
@@ -314,15 +314,15 @@ Note:
  - The tables may contain duplicate records.
  - The company_code is string, so the sorting should not be numeric. For example, if the company_codes are C_1, C_2, and C_10, then the ascending company_codes will be C_1, C_10, and C_2.
 
-![Case 3_1](Images/Medium/case3_1.jpg)
+![Case 3_1](Images/Medium/case3_1.png)
 
-![Case 3_2](Images/Medium/case3_2.jpg)
+![Case 3_2](Images/Medium/case3_2.png)
 
-![Case 3_3](Images/Medium/case3_3.jpg)
+![Case 3_3](Images/Medium/case3_3.png)
 
-![Case 3_4](Images/Medium/case3_4.jpg)
+![Case 3_4](Images/Medium/case3_4.png)
 
-![Case 3_5](Images/Medium/case3_5.jpg)
+![Case 3_5](Images/Medium/case3_5.png)
 
 ### Case 4 - Weather Observation Station 18
 
@@ -361,9 +361,9 @@ Write a query to help Eve.
 
 Note: Print "NULL" as the name if the grade is less than 8.
 
-![Case 7_1](Images/Medium/case7_1.jpg)
+![Case 7_1](Images/Medium/case7_1.png)
 
-![Case 7_2](Images/Medium/case7_2.jpg)
+![Case 7_2](Images/Medium/case7_2.png)
 
 ### Case 8 - Top Competitors
 
@@ -371,9 +371,13 @@ Q. Julia just finished conducting a coding contest, and she needs your help asse
 
 Note: Print the their hacker_id and name as 2 space-separated values.
 
-![Case 8_1](Images/Medium/case8_1.jpg)
+![Case 8_1](Images/Medium/case8_1.png)
 
-![Case 8_2](Images/Medium/case8_2.jpg)
+![Case 8_2](Images/Medium/case8_2.png)
+
+![Case 8_3](Images/Medium/case8_3.png)
+
+![Case 8_4](Images/Medium/case8_4.png)
 
 ### Case 9 - Ollivander's Inventory
 
@@ -381,17 +385,17 @@ Q. Harry Potter and his friends are at Ollivander's with Ron, finally replacing 
 
 Hermione decides the best way to choose is by determining the minimum number of gold galleons needed to buy each non-evil wand of high power and age. Write a query to print the id, age, coins_needed, and power of the wands that Ron's interested in, sorted in order of descending power. If more than one wand has same power, sort the result in order of descending age.
 
-![Case 9_1](Images/Medium/case9_1.jpg)
+![Case 9_1](Images/Medium/case9_1.png)
 
-![Case 9_2](Images/Medium/case9_2.jpg)
+![Case 9_2](Images/Medium/case9_2.png)
 
 ### Case 10 - Challenges
 
 Q. Julia asked her students to create some coding challenges. Write a query to print the hacker_id, name, and the total number of challenges created by each student. Sort your results by the total number of challenges in descending order. If more than one student created the same number of challenges, then sort the result by hacker_id. If more than one student created the same number of challenges and the count is less than the maximum number of challenges created, then exclude those students from the result.
 
-![Case 10_1](Images/Medium/case10_1.jpg)
+![Case 10_1](Images/Medium/case10_1.png)
 
-![Case 10_2](Images/Medium/case10_2.jpg)
+![Case 10_2](Images/Medium/case10_2.png)
 
 ### Case 11 - Contest Leaderboard
 
@@ -399,9 +403,9 @@ Q. You did such a great job helping Julia with her last coding contest challenge
 
 The total score of a hacker is the sum of their maximum scores for all of the challenges. Write a query to print the hacker_id, name, and total score of the hackers ordered by the descending score. If more than one hacker achieved the same total score, then sort the result by ascending hacker_id. Exclude all hackers with a total score of 0 from your result.
 
-![Case 11_1](Images/Medium/case11_1.jpg)
+![Case 11_1](Images/Medium/case11_1.png)
 
-![Case 11_2](Images/Medium/case11_2.jpg)
+![Case 11_2](Images/Medium/case11_2.png)
 
 ### Case 12 - Placements
 
@@ -409,8 +413,8 @@ Q. You are given three tables: Students, Friends and Packages. Students contains
 
 Write a query to output the names of those students whose best friends got offered a higher salary than them. Names must be ordered by the salary amount offered to the best friends. It is guaranteed that no two students got same salary offer.
 
-![Case 12_1](Images/Medium/case12_1.jpg)
+![Case 12_1](Images/Medium/case12_1.png)
 
-![Case 12_2](Images/Medium/case12_2.jpg)
+![Case 12_2](Images/Medium/case12_2.png)
 
-![Case 12_3](Images/Medium/case12_3.jpg)
+![Case 12_3](Images/Medium/case12_3.png)
