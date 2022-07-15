@@ -24,6 +24,39 @@ For the above query, the outer query will output a table and then the subquery w
 
 So, if there is 1 million record, then 1 million records will be processed and then another 1 million records of same data will be matched with every row of 1st million records and that will make a processing of 1,000,000 x 1,000,000 = 1,000,000,000,000 records.
 
+There are 4 clauses in SQL where we can use a subquery
+
+ - SELECT
+ - FROM
+ - WHERE
+ - HAVING
+
+**Note:** 
+ - It is advised not to use subquery in select clause because for every record the SEELCT clause will process, the whole query inside the SELECT clause will also process making the processing very huge. As a solution, you can use JOIN statement.
+
+```sql
+  SELECT *, (CASE
+            WHEN "salary" > (SELECT AVG("salary") FROM "Employee") THEN 'You are rich'
+            ELSE 'You are poor'
+           END) as "remarks"
+  FROM "Employee";
+```
+
+- There should be only scalar subquery in SELECT clause.
+
+**WITH** Clause
+
+When you are using same subquery multiple times, use WITH clause.
+Basically, if you are creating a temp table for avg or sum, better to put it in WITH clause.
+
+```sql
+  WITH sales AS (SELECT "store_name", SUM("price") AS "total_sales"
+                 FROM "Sales"
+                 GROUP BY "store_name")
+  SELECT *
+  FROM sales;
+```
+
 ### Case 1
 
 <b>Q.</b> Find the employees whose salary is more than the average salary earned by all employees.
@@ -74,6 +107,96 @@ So, if there is 1 million record, then 1 million records will be processed and t
 ### Case 4
 
 <b>Q.</b> Find the employees in each department who earn more than the average salary in that department.
+
+**Employee Table**
+
+| Parameter             | Data Type    |
+| ----------------- | ------ |
+| Id | int |
+| emp_name | varchar |
+| dept_name | varchar |
+| salary | int |
+
+**Department Table**
+
+| Parameter             | Data Type    |
+| ----------------- | ------ |
+| Id | int |
+| dept_name | varchar |
+| location | varchar |
+
+### Case 5
+
+<b>Q.</b> Find stores whose sales were better than the average sales across all stores.
+
+**Sales Table**
+
+| Parameter             | Data Type    |
+| ----------------- | ------ |
+| store_id | int |
+| store_name | varchar |
+| product_name | varchar |
+| quantity | int |
+| price | int |
+
+### Case 6
+
+<b>Q.</b> Fetch all employee details and add remarks to those employees who earn more than the average pay.
+
+**Employee Table**
+
+| Parameter             | Data Type    |
+| ----------------- | ------ |
+| Id | int |
+| emp_name | varchar |
+| dept_name | varchar |
+| salary | int |
+
+### Case 7
+
+<b>Q.</b> Find the stores which have sold more units than the average units sold by all stores.
+
+**Sales Table**
+
+| Parameter             | Data Type    |
+| ----------------- | ------ |
+| store_id | int |
+| store_name | varchar |
+| product_name | varchar |
+| quantity | int |
+| price | int |
+
+### Case 8
+
+<b>Q.</b> INSERT data to employee history table. Make sure not to insert duplicate records.
+
+**Employee History Table**
+
+| Parameter             | Data Type    |
+| ----------------- | ------ |
+| emp_id | int |
+| emp_name | varchar |
+| dept_name | varchar |
+| salary | int |
+| location | varchar |
+
+### Case 9
+
+<b>Q.</b> Give 10% increment to all employees in Bangalore location based on the maximum salary earned by an employee in each department. Use employee_history.
+
+**Employee History Table**
+
+| Parameter             | Data Type    |
+| ----------------- | ------ |
+| emp_id | int |
+| emp_name | varchar |
+| dept_name | varchar |
+| salary | int |
+| location | varchar |
+
+### Case 10
+
+<b>Q.</b> Delete all employees who do not have any department.
 
 **Employee Table**
 
