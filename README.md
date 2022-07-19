@@ -12,7 +12,7 @@
 
 ![Wallpaper](Images/wallpaper.png)
 
-Problem solving questions from HACKER RANK. All given cases have been solved. I have also recieved 5 star in SQL.
+Problem solving questions from HACKER RANK. All uploaded cases have been solved. I have also recieved **5 star** in SQL.
 
 MYSQL option has been used to solve the given cases.
 
