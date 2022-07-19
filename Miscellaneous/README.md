@@ -214,3 +214,41 @@ Basically, if you are creating a temp table for avg or sum, better to put it in 
 | Id | int |
 | dept_name | varchar |
 | location | varchar |
+
+### Case 11
+
+<b>Q. Pivot the data to get sales data of a particular month.</b>
+
+**Sales Data Table**
+
+| Parameter             | Data Type    |
+| ----------------- | ------ |
+| sales_date | date |
+| customer_id | varchar |
+| amount | int |
+
+### Case 12
+
+<b>Q. Delete duplicate rows from a table.</b>
+
+**Duplicate Employee Table**
+
+| Parameter             | Data Type    |
+| ----------------- | ------ |
+| id | int |
+| emp_name | varchar |
+| dept_name | varchar |
+| age | int |
+| gender | varchar |
+| salary | int |
+
+### Case 13
+
+<b>Q. Do the data cleaning by removing dollar sign and converting data type to int</b>
+
+**Duplicate Employee Table**
+
+| Parameter             | Data Type    |
+| ----------------- | ------ |
+| id | int |
+| salary | varchar |
