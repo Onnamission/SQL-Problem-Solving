@@ -217,7 +217,7 @@ Basically, if you are creating a temp table for avg or sum, better to put it in 
 
 ### Case 11
 
-<b>Q. Pivot the data to get sales data of a particular month.</b>
+<b>Q.</b> Pivot the data to get sales data of a particular month.
 
 **Sales Data Table**
 
@@ -229,7 +229,7 @@ Basically, if you are creating a temp table for avg or sum, better to put it in 
 
 ### Case 12
 
-<b>Q. Delete duplicate rows from a table.</b>
+<b>Q.</b> Delete duplicate rows from a table.
 
 **Duplicate Employee Table**
 
@@ -244,7 +244,7 @@ Basically, if you are creating a temp table for avg or sum, better to put it in 
 
 ### Case 13
 
-<b>Q. Do the data cleaning by removing dollar sign and converting data type to int</b>
+<b>Q.</b> Do the data cleaning by removing dollar sign and converting data type to int.
 
 **Duplicate Employee Table**
 
