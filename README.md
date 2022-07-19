@@ -28,4 +28,4 @@ MYSQL option has been used to solve the given cases.
 
 **Medium:** This folder contains the medium level questions given in HackerRank.
 
-**Miscellaneous:** This folder contains the those questions which are outside from HackerRank. It mostly contains subqueries.
+**Miscellaneous:** This folder contains those questions which are outside from HackerRank. It mostly contains subqueries.
