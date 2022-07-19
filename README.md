@@ -21,3 +21,11 @@ MYSQL option has been used to solve the given cases.
 ```bash
   git clone https://github.com/Onnamission/SQL-Problem-Solving.git
 ```
+
+## About
+
+**Easy:** This folder contains the easy level questions given in HackerRank.
+
+**Medium:** This folder contains the medium level questions given in HackerRank.
+
+**Miscellaneous:** This folder contains the those questions which are outside from HackerRank. It mostly contains subqueries.
